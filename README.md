@@ -2,7 +2,7 @@
 
 ## About This Project
 This project shows how a small on-premise application is migrated to AWS Cloud.
-The migration is done in *AWS Select Region *.
+The migration is done in * AWS *.
 
 The application was originally running on a local (on-premise) server and then
 moved to AWS using a *Lift-and-Shift* migration approach.
@@ -18,7 +18,7 @@ moved to AWS using a *Lift-and-Shift* migration approach.
 
 ---
 
-## AWS Services Used (select region)
+## AWS Services Used
 - *EC2* – to host the application  
 - *S3* – to store application files  
 - *RDS (MySQL)* – for database  
@@ -29,7 +29,7 @@ moved to AWS using a *Lift-and-Shift* migration approach.
 
 ---
 
-## Architecture (Simple Explanation)
+## Architecture
 - User accesses the application hosted on EC2
 - EC2 runs inside a secure VPC
 - Application files are stored in S3
