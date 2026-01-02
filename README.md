@@ -1,4 +1,4 @@
-# aws-onprem-to-cloud-migration
+# aws-on-premise-to-cloud-migration
 
 ## About This Project
 This project shows how a small on-premise application is migrated to AWS Cloud.
@@ -66,7 +66,7 @@ This reduced manual work and ensured consistent infrastructure setup.
 ---
 
 ## Why This Project
-This project was created to gain real-world hands-on experience in:
+This project was created to gain real-world hands-on experience in: 
 - AWS Cloud 
 - On-premise to cloud migration
 - DevOps automation using Terraform
