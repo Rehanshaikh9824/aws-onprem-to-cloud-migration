@@ -1,0 +1,32 @@
+pipeline {
+  agent any
+
+  stages {
+    stage('Checkout Code') {
+      steps {
+        git 'https://github.com/username/onprem-to-aws-migration.git'
+      }
+    }
+
+    stage('Build Docker Image') {
+      steps {
+        sh 'docker build -t onprem-app .'
+      }
+    }
+
+    stage('Security Scan') {
+      steps {
+        sh 'trivy image onprem-app'
+      }
+    }
+
+    stage('Deploy to EC2') {
+      steps {
+        sh '''
+        ssh ec2-user@EC2_PUBLIC_IP \
+        docker run -d -p 80:80 onprem-app
+        '''
+      }
+    }
+  }
+}
